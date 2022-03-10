@@ -1,0 +1,248 @@
+    /*===========Reset css========*/
+    
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    small,
+    strong,
+    a,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /*----color code----*/
+    
+    .color-one {
+        background: #051966;
+    }
+    /*===========Header========*/
+    
+    .header-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        clip-path: polygon(0 0, 100% 0, 100% 31%, 0 44%);
+        /*   opacity: .5; */
+        background-image: linear-gradient(to left bottom, #f1706b, #ad959c75, #89456e54, #fff0, #524a90);
+    }
+    
+    .section-one .hero-content,
+    .card {
+        z-index: 1;
+    }
+    /*-----main navbar------*/
+    
+    .main-navbar .navbar-brand span:nth-child(1) {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    
+    .main-navbar .navbar .nav-item {
+        position: relative;
+        margin-left: 50px;
+        font-size: .9rem;
+    }
+    
+    .main-navbar .nav-link {
+        color: #eee !important;
+        transition: .5s ease;
+    }
+    
+    .main-navbar .nav-link.active {
+        color: #ff7800 !important;
+    }
+    
+    .main-navbar .nav-link:hover {
+        color: #ff7800 !important;
+    }
+    
+    .main-navbar .nav-link:hover {
+        color: #1b3d9f;
+    }
+    
+    .main-navbar .nav-link:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: #ff7800;
+        visibility: hidden;
+        width: 0px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    .main-navbar .navbar a:hover:before,
+    .navbar li:hover>a:before,
+    .navbar .active:before {
+        visibility: visible;
+        width: 100%;
+    }
+    
+    .main-navbar .navbar-nav:nth-child(2) .nav-link:before {
+        display: none;
+    }
+    
+    #signUp {
+        background: #efefef;
+        padding: .5rem 2rem .5rem 2rem;
+        color: blue !important;
+    }
+    
+    #signUp:hover {
+        color: #ff7800 !important;
+    }
+    /*-----section-one-------*/
+    
+    .hero .row .col-12 {
+        margin-top: 5rem;
+    }
+    
+    .hero-card {
+        z-index: 1;
+        background: white;
+    }
+    /* .hero .row .col-12 {
+        margin-top: 15rem;
+    } */
+    
+    .hero-card .hero-card-content {
+        background: rgb(255, 255, 255);
+    }
+    
+    .hero-card-content .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+    }
+    
+    .hero-card-content .sub-title {
+        font-size: .9rem;
+        color: #AEB1B6;
+    }
+    
+    .hero-card-detail .price-box span {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .hero-card-detail ul li {
+        font-size: .8rem;
+        margin-left: .2rem;
+        color: #ff7800;
+    }
+    
+    .hero-card-detail .rating-box span {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .hero-card-btn-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hero-card-btn-group button {
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: capitalize;
+        padding: .5rem .5rem .5rem .5rem;
+        border: none;
+        border-radius: .2rem;
+        transition: .5s ease;
+    }
+    
+    .hero-card-btn-group button:nth-child(1) {
+        background: #FF7468;
+        color: white;
+    }
+    
+    .hero-card-btn-group button:nth-child(2):hover {
+        background: #FF7468;
+        color: white;
+    }
+    
+    .hero-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hero-content .title-group .title {
+        font-size: 4rem;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        max-width: 405px;
+    }
+    
+    .hero-content .title-group .sub-title {
+        font-size: .8rem;
+        color: white;
+        text-transform: uppercase;
+        max-width: 410px;
+    }
+    
+    .hero-content button {
+        padding: 2rem;
+        width: 150px;
+        height: 150px;
+        border: 1px solid #eee;
+        background: none;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        transition: .5s ease;
+    }
+    
+    .hero-content button:hover {
+        background: #ff7468;
+    }
+    
+    .hero-card-inner {
+        width: 400px;
+    }
+    
+    .hero-card-inner .hero-card-contents {
+        background: white;
+    }
+    
+    .hero-card-inner .hero-card-content {
+        background: white;
+        padding-block: 2rem;
+        width: 75%;
+        margin: auto;
+    }
