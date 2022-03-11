@@ -124,6 +124,10 @@
     }
     /*-----section-one-------*/
     
+    .section-one {
+        height: 100%;
+    }
+    
     .hero .row .col-12 {
         margin-top: 5rem;
     }
@@ -240,4 +244,96 @@
         width: 76%;
         padding-block: 2rem;
         margin: auto;
+    }
+    /*-----hero list------*/
+    
+    .mentor-box img {
+        max-width: 100px;
+        max-height: 250px;
+        margin-top: -30px;
+    }
+    
+    .mentor-box {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .bg-position {
+        position: relative;
+    }
+    
+    .bg-position:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: #3A3374;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        border-radius: .2rem;
+    }
+    
+    .mentor-box .text {
+        font-size: 1.5rem;
+        max-width: 150px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        line-height: 1;
+    }
+    
+    .mentor-box .icon-play i {
+        font-size: 40px;
+        color: #ff7800;
+    }
+    
+    .hero-list-box .number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        position: relative;
+    }
+    
+    .hero-list-box .number:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5%;
+        position: absolute;
+        background: orange;
+        right: -40px;
+        top: 16px;
+    }
+    
+    .hero-list-content .title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .hero-list-content .text {
+        font-size: .9rem;
+        color: white;
+    }
+    
+    .hero-play-btn {
+        font-size: 2rem;
+        color: #ff7800;
+    }
+    
+    .hero-play-btn {
+        font-size: 2rem;
+        color: #FF7468;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center
     }
