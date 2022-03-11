@@ -127,10 +127,9 @@
     .section-one {
         height: 100%;
     }
-    
-    .hero .row .col-12 {
+    /* .hero .row .col-12 {
         margin-top: 5rem;
-    }
+    } */
     
     .hero-card {
         z-index: 1;

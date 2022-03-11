@@ -16,22 +16,22 @@
 }
 
 @media only screen and (max-width: 991px) {
-    .hero .row .col-12:nth-child(1) {
-        margin-top: 5rem;
-    }
-    .hero .row .col-12:nth-child(2) {
-        margin-top: 1rem;
-    }
     .hero-content {
         display: block;
     }
-    .hero-content .title,
-    .sub-title {
-        margin: auto;
-    }
     .hero-content .title {
-        font-size: 2rem !important;
-        padding-block: .6rem;
+        font-size: 3rem !important;
     }
-    .hero-content .hero-btn {}
+}
+
+@media only screen and (max-width: 767px) {
+    .hero .row .col-12:nth-child(2) {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .area {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
 }
