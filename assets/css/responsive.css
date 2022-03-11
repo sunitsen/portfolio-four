@@ -14,3 +14,24 @@
         margin: auto;
     }
 }
+
+@media only screen and (max-width: 991px) {
+    .hero .row .col-12:nth-child(1) {
+        margin-top: 5rem;
+    }
+    .hero .row .col-12:nth-child(2) {
+        margin-top: 1rem;
+    }
+    .hero-content {
+        display: block;
+    }
+    .hero-content .title,
+    .sub-title {
+        margin: auto;
+    }
+    .hero-content .title {
+        font-size: 2rem !important;
+        padding-block: .6rem;
+    }
+    .hero-content .hero-btn {}
+}

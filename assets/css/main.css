@@ -132,9 +132,6 @@
         z-index: 1;
         background: white;
     }
-    /* .hero .row .col-12 {
-        margin-top: 15rem;
-    } */
     
     .hero-card .hero-card-content {
         background: rgb(255, 255, 255);
@@ -166,12 +163,6 @@
     .hero-card-detail .rating-box span {
         font-size: 1.2rem;
         font-weight: bold;
-    }
-    
-    .hero-card-btn-group {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     
     .hero-card-btn-group button {
@@ -219,21 +210,25 @@
         padding: 2rem;
         width: 150px;
         height: 150px;
-        border: 1px solid #eee;
+        border: .1rem solid #eee;
         background: none;
         border-radius: 50%;
         font-size: 1.2rem;
         font-weight: bold;
         color: white;
         transition: .5s ease;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .hero-content button:hover {
-        background: #ff7468;
+        background: #625c94;
     }
     
     .hero-card-inner {
-        width: 400px;
+        width: 350px;
     }
     
     .hero-card-inner .hero-card-contents {
@@ -242,7 +237,7 @@
     
     .hero-card-inner .hero-card-content {
         background: white;
+        width: 76%;
         padding-block: 2rem;
-        width: 75%;
         margin: auto;
     }
