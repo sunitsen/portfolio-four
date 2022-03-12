@@ -41,6 +41,14 @@
     }
     /*===========Header========*/
     
+    header {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
     .header-overlay {
         width: 100%;
         height: 100%;
@@ -49,42 +57,19 @@
         left: 0;
         z-index: -1;
         clip-path: polygon(0 0, 100% 0, 100% 31%, 0 44%);
-        /*   opacity: .5; */
         background-image: linear-gradient(to left bottom, #f1706b, #ad959c75, #89456e54, #fff0, #524a90);
     }
     
     .section-one {
         position: relative;
-    }
-    
-    .section-one:after {
-        content: '';
-        display: block;
-        width: 100%;
         height: 100%;
-        background: #1f1f1f70;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -3;
-        clip-path: polygon(50% 0%, 100% 0, 100% 92%, 58% 100%, 28% 94%, 0 100%, 0 0);
     }
     
-    .section-one::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: #05186696;
-        position: absolute;
-        top: 5px;
-        left: 0;
-        z-index: -3;
-        clip-path: polygon(50% 0%, 100% 0, 100% 92%, 58% 100%, 28% 94%, 0 100%, 0 0);
+    .section-one .card {
+        z-index: 1;
     }
     
-    .section-one .hero-content,
-    .card {
+    .section-one .hero-content {
         z-index: 1;
     }
     /*-----main navbar------*/
@@ -155,32 +140,71 @@
     #signUp:hover {
         color: #ff7800 !important;
     }
+    
+    .navbar-toggler:focus {
+        outline: none;
+        box-shadow: none;
+        border: none !important;
+    }
     /*-----section-one-------*/
     
     .section-one {
         height: 100%;
     }
-    /* .hero .row .col-12 {
-        margin-top: 5rem;
-    } */
     
-    .hero-card {
-        z-index: 1;
+    .hero-elements .hero-content {
+        width: 23.5rem;
+    }
+    
+    .hero-elements .hero-btn {
+        width: 10rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-elements .hero-btn button {
+        width: 10rem;
+        height: 10rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 1px solid #eee;
+        border-radius: 50%;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        background: none;
+        color: white;
+        padding: 1rem;
+        transition: .5s ease;
+    }
+    
+    .hero-elements .hero-btn button:hover {
+        background: #5f5891;
+        color: #ff7800;
+    }
+    
+    .hero-elements .hero-card {
+        width: 360px;
+    }
+    
+    .hero-card a .ratio {
+        border-top-left-radius: .2rem;
+        border-top-right-radius: .2rem;
+    }
+    
+    .hero-card a .ratio img {
+        border-top-left-radius: .2rem;
+        border-top-right-radius: .2rem;
     }
     
     .hero-card .hero-card-content {
-        background: rgb(255, 255, 255);
-    }
-    
-    .hero-card-content .title {
-        font-size: 2rem;
-        font-weight: bold;
-        color: black;
-        text-transform: uppercase;
+        background: white;
+        padding: 2.2rem 3rem 3rem 3rem;
     }
     
     .hero-card-content .sub-title {
-        font-size: .9rem;
+        font-size: 1rem;
         color: #AEB1B6;
     }
     
@@ -231,14 +255,14 @@
         font-weight: 600;
         color: white;
         text-transform: uppercase;
-        max-width: 405px;
+        width: 405px;
     }
     
     .hero-content .title-group .sub-title {
         font-size: .8rem;
         color: white;
         text-transform: uppercase;
-        max-width: 410px;
+        width: 410px;
     }
     
     .hero-content button {
@@ -262,28 +286,16 @@
         background: #625c94;
     }
     
-    .hero-card-inner {
-        width: 350px;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    }
-    
-    .hero-card-inner a .ratio img {
-        border-top-left-radius: 2rem;
-        border-top-right-radius: .2rem;
-    }
-    
     .hero-card-inner .hero-card-contents {
         background: white;
-        border-bottom-left-radius: .2rem;
-        border-bottom-right-radius: .2rem;
     }
-    
+    /*     
     .hero-card-inner .hero-card-content {
         background: white;
         width: 76%;
         padding-block: 2rem;
         margin: auto;
-    }
+    } */
     /*-----hero list------*/
     
     .mentor-box img {
@@ -376,4 +388,129 @@
         display: flex;
         justify-content: center;
         align-items: center
+    }
+    /*--------section two---------*/
+    
+    .learning-program-list {
+        width: 300px;
+        height: auto;
+        background: #fff;
+        margin-top: 10px;
+        padding: 3rem 0rem 3rem 0rem;
+        border-radius: .2rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+    
+    .learning-program-list .icon-box {
+        padding: 1rem;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    
+    .learning-program-list .icon-box i {
+        font-size: 1.5rem;
+    }
+    
+    .learning-program-list .text-box .title {
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .learning-program-list .text-box .sub-title {
+        font-size: .9rem;
+        text-transform: capitalize;
+        color: black;
+    }
+    
+    .learning-program-list .box-one .icon-box {
+        background: #FFF0E9;
+    }
+    
+    .learning-program-list .box-one .icon-box i {
+        color: #FF766A;
+    }
+    
+    .learning-program-list .box-two .icon-box {
+        background: #E1DDFF;
+    }
+    
+    .learning-program-list .box-two .icon-box i {
+        color: #7765FF;
+    }
+    
+    .learning-program-list .box-three .icon-box {
+        background: #FFF6DD;
+    }
+    
+    .learning-program-list .box-three .icon-box i {
+        color: #F5B70A;
+    }
+    
+    .learning-program-list .box-four .icon-box {
+        background: #EDF8F4;
+    }
+    
+    .learning-program-list .box-four .icon-box i {
+        color: #06DE90;
+    }
+    
+    .section-two {
+        position: relative;
+    }
+    
+    .section-two:after {
+        content: '';
+        display: block;
+        width: 40%;
+        height: 100%;
+        background: #F8F8FF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .content-box-section-two {
+        padding: 1rem;
+    }
+    
+    .content-box-section-two span {
+        font-size: 1rem;
+        color: #ff7468;
+        font-weight: bold;
+    }
+    
+    .content-box-section-two .title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        max-width: 350px;
+        line-height: 1;
+        color: rgb(0, 0, 0);
+        padding-block: 1rem;
+    }
+    
+    .content-box-section-two .text {
+        max-width: 350px;
+        font-size: .9rem;
+        padding-block: .5rem;
+    }
+    
+    .content-box-section-two button {
+        padding: .2rem 2rem .2rem 2rem;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: .2rem;
+        background: #ff7468;
+        color: white;
     }

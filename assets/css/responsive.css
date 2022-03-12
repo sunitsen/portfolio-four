@@ -1,4 +1,7 @@
 @media only screen and (max-width: 991px) {
+    .main-navbar {
+        background: rgb(69, 61, 128);
+    }
     .main-navbar .nav-item {
         margin-left: 0 !important;
         text-align: center;
@@ -15,23 +18,50 @@
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
+    .hero-elements {
+        display: block !important;
+    }
     .hero-content {
-        display: block;
+        margin: auto;
+        width: 100% !important;
+    }
+    .hero-content .sub-title {
+        text-align: center;
+        width: 100% !important;
     }
     .hero-content .title {
-        font-size: 3rem !important;
+        width: 100% !important;
+        text-align: center;
+        font-size: 2.5rem !important;
+    }
+    .hero-btn {
+        margin: auto;
+        padding-block: 1rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-card {
+        margin: auto;
+        width: 300px !important;
+    }
+    .hero-card-content {
+        padding: .5rem 0rem 1rem 1.4rem !important;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .hero .row .col-12:nth-child(2) {
-        margin-top: 10px;
+    .learning-program {
+        display: block !important;
+        justify-content: center !important;
     }
-}
-
-@media only screen and (max-width: 767px) {
-    .area {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    .learning-program .learning-program-list {
+        width: 300px;
+        margin: 1rem auto !important;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .learning-program .learning-program-list:nth-child(1) {
+        margin-top: 0 !important;
     }
 }
