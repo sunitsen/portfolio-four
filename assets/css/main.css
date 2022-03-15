@@ -9,6 +9,7 @@
         font-family: Arial, Helvetica, sans-serif;
         position: relative;
     }
+    /*------reset css-------*/
     
     h1,
     h2,
@@ -503,10 +504,6 @@
     /*-----section three------*/
     /*-----catagory slider-------*/
     
-    .section-title {
-        text-align: center;
-    }
-    
     .section-title h6 {
         font-weight: 600;
         text-transform: capitalize;
@@ -611,4 +608,363 @@
     
     .catagory-slider .owl-stage-outer {
         padding-block: 1rem;
+    }
+    
+    .browse-all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: .3rem 2rem .3rem 2rem;
+        border: none;
+        background: #ff7468;
+        color: white;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+    /*-------section four---------*/
+    
+    .section-four {
+        background: #F8F8FF;
+    }
+    
+    .populer-courses {
+        background: rgb(255, 255, 255);
+        padding: .5rem;
+        border-radius: .2rem;
+    }
+    
+    .populer-courses .ratio img {
+        border-radius: .2rem;
+    }
+    
+    .populer-courses .content-box strong {
+        font-size: .9rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: #A1A1A1;
+        ;
+    }
+    
+    .populer-courses .content-box .title {
+        max-height: 65px;
+        overflow: hidden;
+        font-size: 2rem;
+        color: black;
+        font-weight: bold;
+        line-height: 1;
+    }
+    
+    .populer-courses .img-box img {
+        max-width: 40px;
+        height: 40px;
+        border-radius: 50px;
+    }
+    
+    .populer-courses .info-box span {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .populer-courses .course-list a {
+        background: #F2F3F5;
+        font-size: .7rem;
+        padding: .2rem 1rem .2rem 1rem;
+        border-radius: 20px;
+        color: #A1A1A1;
+        text-transform: capitalize;
+    }
+    
+    .populer-courses .content-box {
+        padding: 1rem;
+    }
+    
+    .populer-courses .rating-box span:nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #FFB1AA;
+    }
+    
+    .populer-courses .rating-box span:nth-child(2) {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: black;
+    }
+    
+    .populer-courses .rating-box ul li {
+        margin-left: .2rem;
+        color: #F5B70A;
+    }
+    /*---------section----------*/
+    
+    .teacher-data {
+        background: #eee;
+        padding: .5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    
+    .teacher-data .ratio img {
+        border-radius: .2rem;
+    }
+    
+    .teacher-data .profile {
+        background: #ff7468;
+        padding: .6rem 2rem .6rem 2rem;
+        border-radius: .2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        text-transform: capitalize;
+    }
+    
+    .teacher-data .profile-image {
+        width: 30%;
+    }
+    
+    .teacher-data .teacher-detail {
+        width: 70%;
+    }
+    
+    .teacher-data .teacher-detail .title {
+        font-size: 2rem;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    
+    .teacher-data .teacher-detail .suv-title {
+        font-size: 1rem;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    
+    .teacher-data .teacher-detail .text {
+        font-size: 1rem;
+        width: 350px;
+        overflow: hidden;
+        line-height: 1.3;
+        max-height: 4rem;
+        text-transform: capitalize;
+    }
+    /*------section six-----*/
+    
+    .section-six {
+        background: #6159A2;
+    }
+    
+    .noot-box {
+        background: white;
+        border-radius: .2rem;
+        padding: 2rem 0rem 2rem 0rem
+    }
+    
+    .studient-note .noot-box svg {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #f5b70a;
+    }
+    
+    .studient-note .noot-box {
+        text-align: center;
+    }
+    
+    .studient-note .noot-box .text {
+        font-size: .9rem;
+        max-height: 60px;
+        line-height: 1.4;
+        overflow: hidden;
+    }
+    
+    .studient-note .noot-box img {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        border-radius: 50%;
+        border: 1px solid gray;
+        padding: .3rem;
+    }
+    
+    .studient-note .noot-box .name {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    
+    .studient-note .noot-box .title {
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+    
+    .studient-note {
+        position: relative;
+    }
+    
+    .studient-note .owl-nav.disabled {
+        display: block !important;
+    }
+    
+    .studient-note .owl-nav .owl-next svg {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        font-size: 2rem;
+        color: white;
+        background: orange;
+        width: 20px;
+        padding: .5rem;
+        border-radius: 50px;
+        height: 20px;
+    }
+    
+    .studient-note .owl-nav .owl-prev svg {
+        position: absolute;
+        top: -50px;
+        right: 50px;
+        font-size: 2rem;
+        color: white;
+        background: orange;
+        width: 20px;
+        padding: .5rem;
+        border-radius: 50px;
+        height: 20px;
+    }
+    /*------section seven--------*/
+    
+    .section-seven {
+        background: #F8F8FF;
+    }
+    
+    .content-of-contact {
+        background: #FF7468;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-of-contact .title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        max-width: 300px;
+        text-align: left;
+        color: white;
+    }
+    
+    .contact-form h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    
+    .contact-form {
+        width: 70% !important;
+        background: white;
+        padding: 1rem;
+    }
+    
+    .contact-form .form-group input:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #ff7468 !important;
+    }
+    
+     ::placeholder {
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+    
+    .get-it-now {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: .5rem 2rem .5rem 2rem;
+        border-radius: .2rem;
+        border: none;
+        background: black;
+        color: white;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    /*-----footer section------*/
+    
+    .footer-box .footer-logo a {
+        color: black;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        width: fit-content;
+        padding: .2rem 1rem .3rem 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-box .text {
+        text-align: center;
+        font-size: .9rem;
+        max-height: 55px;
+        overflow: hidden;
+        line-height: 1.3;
+    }
+    
+    .footer-email-box {
+        display: flex;
+        position: relative;
+    }
+    
+    .footer-email-box input:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px solid #ff7468 !important;
+    }
+    
+    .footer-email-box input {
+        height: 45px;
+        background: #FFF0E9;
+        border: none;
+        border-radius: .5rem;
+    }
+    
+    .footer-email-box button {
+        background: #ff7468;
+        border: none;
+        border-radius: .5rem;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 5px;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .footer-email-box button i {
+        margin-top: 4px;
+    }
+    
+    .footer-box .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    
+    .footer-box .links li {
+        margin-top: 10px;
+    }
+    
+    .footer-box .links li a {
+        font-size: 1rem;
+        text-transform: capitalizea;
+        color: black;
+        transition: .5s ease;
+    }
+    
+    .footer-box .links li a:hover {
+        font-weight: bold;
     }
