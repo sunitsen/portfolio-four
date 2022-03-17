@@ -1,3 +1,28 @@
+@media only screen and (max-width: 1400px) {
+    /*-------main navbar------*/
+    .main-navbar .nav-item {
+        margin-left: 3rem !important;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .populer-courses .info-box .course-list {
+        margin-top: 10px;
+    }
+    .populer-courses .img-box {
+        width: 100%;
+    }
+    .populer-courses .course-list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .populer-courses .img-box {
+        justify-content: space-between !important;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .main-navbar {
         background: rgb(69, 61, 128);
@@ -42,12 +67,9 @@
 }
 
 @media only screen and (max-width: 992px) {
-    .hero-card {
+    .template-card {
         margin: auto;
         width: 300px !important;
-    }
-    .hero-card-content {
-        padding: .5rem 0rem 1rem 1.4rem !important;
     }
     .hero-list-row {
         padding-bottom: 0 !important;
@@ -66,5 +88,11 @@
     }
     .learning-program .learning-program-list:nth-child(1) {
         margin-top: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .hero-list-row .col-xl-4 {
+        justify-content: center;
     }
 }
