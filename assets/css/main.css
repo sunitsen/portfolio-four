@@ -35,6 +35,10 @@
     a {
         text-decoration: none;
     }
+    
+    .template-box-shadow {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
     /*===========Header========*/
     
     header {
@@ -80,11 +84,11 @@
     }
     
     .main-navbar .nav-link.active {
-        color: #ff7800 !important;
+        color: #ff7468 !important;
     }
     
     .main-navbar .nav-link:hover {
-        color: #ff7800 !important;
+        color: #ff7468 !important;
     }
     
     .main-navbar .nav-link:hover {
@@ -100,7 +104,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        background-color: #ff7800;
+        background-color: #ff7468;
         visibility: hidden;
         width: 0px;
         transition: all 0.3s ease-in-out 0s;
@@ -119,18 +123,16 @@
     }
     
     #signUp {
-        background: #ff7800;
         padding: .5rem 2rem .5rem 2rem;
-        color: #5c5590 !important;
+        color: white !important;
         font-weight: bold;
         border-radius: .2rem;
-        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
         transition: .5s ease;
+        background: #453d80;
     }
     
     #signUp:hover {
-        color: white !important;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: #FF7468 !important;
     }
     
     .navbar-toggler:focus {
@@ -183,7 +185,7 @@
     
     .hero-elements .hero-btn button:hover {
         background: #5f5891;
-        color: #ff7800;
+        color: #ff7468;
     }
     
     .hero-content {
@@ -275,7 +277,7 @@
     .template-card-detail ul li {
         font-size: .8rem;
         margin-left: .2rem;
-        color: #ff7800;
+        color: #ff7468;
     }
     
     .template-card-detail .rating-box span {
@@ -345,7 +347,7 @@
     
     .mentor-box .icon-play i {
         font-size: 40px;
-        color: #ff7800;
+        color: #ff7468;
     }
     
     .hero-list-box {
@@ -405,7 +407,7 @@
     
     .hero-play-btn {
         font-size: 2rem;
-        color: #ff7800;
+        color: #ff7468;
     }
     
     .hero-play-btn {
@@ -427,7 +429,6 @@
         width: 50%;
         height: 150px;
         background: white;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: .2rem;
         display: flex;
         justify-content: center;
@@ -619,17 +620,17 @@
     }
     
     .populer-courses .img-box img {
-        width: 50px;
-        height: 50px;
+        min-width: 40px;
+        height: 40px;
         border-radius: 50px;
     }
     
     .populer-courses .img-box {
-        width: 70%;
+        width: 65%;
     }
     
     .populer-courses .course-list {
-        width: 25%;
+        width: 35%;
         display: flex;
         justify-content: right;
         align-items: center;
@@ -667,6 +668,14 @@
     }
     /*-----section three------*/
     
+    .section-title-color .title {
+        color: white !important;
+    }
+    
+    .section-title-color .text {
+        color: white !important;
+    }
+    
     .section-title .sub-title {
         font-weight: 600;
         text-transform: capitalize;
@@ -702,7 +711,6 @@
     .teacher-data {
         background: white;
         padding: 1rem;
-        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     }
     
     .teacher-data .ratio img {
@@ -765,7 +773,6 @@
         background: white;
         border-radius: .2rem;
         padding: 2rem 0rem 2rem 0rem;
-        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     }
     
     .noot-box svg {
@@ -862,7 +869,6 @@
         justify-content: center;
         margin: auto;
         align-items: center;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
     
     .catagory-slider .item-inner .icon {
@@ -1027,6 +1033,11 @@
     }
     /*-----footer section------*/
     
+    .footer-box {
+        width: 80%;
+        margin: auto;
+    }
+    
     .footer-box .footer-logo a {
         color: #3e3e3e;
         font-size: 2.5rem;
@@ -1127,14 +1138,9 @@
         font-weight: bold;
     }
     
-    .footer-box {
-        width: 100%;
-    }
-    
     .footer-box .address {
         font-size: 1rem;
         text-transform: capitalize;
-        background: red;
         max-height: 45px;
         line-height: 1.2;
         padding: .3rem .2rem .2rem .2rem;
@@ -1146,7 +1152,6 @@
         margin-top: 10px;
         font-size: 1rem;
         text-transform: capitalize;
-        background: red;
         max-height: 30px;
         line-height: 1.2;
         padding: .3rem .2rem .2rem .2rem;
@@ -1158,12 +1163,17 @@
         margin-top: 10px;
         font-size: 1rem;
         text-transform: capitalize;
-        background: red;
         max-height: 30px;
         line-height: 1.2;
         padding: .3rem .2rem .2rem .2rem;
         overflow: hidden;
         width: 100%;
+    }
+    
+    .follow {
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
     
     .follow-label {
@@ -1175,9 +1185,33 @@
     .follow ul li {
         width: 30px;
         height: 30px;
-        background: red;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50px;
+    }
+    
+    .follow ul li a i {
+        color: black;
+        font-size: 1.2rem;
+    }
+    
+    .copyright {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .copy-right-text {
+        text-transform: capitalize;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .follow {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
