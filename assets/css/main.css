@@ -1180,6 +1180,7 @@
         font-size: 1.5rem;
         font-weight: bold;
         text-transform: capitalize;
+        color: white;
     }
     
     .follow ul li {
@@ -1192,8 +1193,19 @@
     }
     
     .follow ul li a i {
-        color: black;
+        color: rgb(255, 255, 255);
         font-size: 1.2rem;
+    }
+    
+    .follow {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-bottom .container-fluid {
+        background: #3e3e3e;
     }
     
     .copyright {
@@ -1207,11 +1219,5 @@
         text-transform: capitalize;
         font-size: 1.1rem;
         text-align: center;
-    }
-    
-    .follow {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        color: white;
     }
