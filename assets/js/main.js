@@ -201,15 +201,11 @@ $(document).mousemove(function(e) {
 // }
 
 //Change pos/background/padding/add shadow on nav when scroll event happens 
-$(function() {
-    var navbar = $('.main-navbar');
 
-    $(window).scroll(function() {
-        if ($(window).scrollTop() <= 40) {
-            navbar.removeClass('navbar-scroll');
-        } else {
-            navbar.addClass('navbar-scroll-down');
-        }
-
-    });
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+        $('.main-navbar').addClass('sticky')
+    } else {
+        $('.main-navbar').removeClass('sticky')
+    }
 });

@@ -74,12 +74,24 @@ header {
 
 /*===========main navabar styling start from here========*/
 
+
+/* 
 .navbar-scroll {
     background: none;
     z-index: 999 !important;
 }
 
 .navbar-scroll-down {
+    background: #000836;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    z-index: 111;
+} */
+
+.sticky {
     background: #000836;
     position: fixed;
     width: 100%;
@@ -438,6 +450,7 @@ header {
     color: white;
     line-height: 1;
     text-transform: capitalize;
+    transition: .5s ease;
 }
 
 .mentor-box .icon-play i {
@@ -876,7 +889,7 @@ header {
     margin: auto;
     line-height: 1.2;
     overflow: hidden;
-    max-height: 45px;
+    max-height: 44px;
     padding: .2rem .2rem .2rem .2rem;
 }
 
@@ -899,7 +912,7 @@ header {
     font-weight: 500;
     text-transform: capitalize;
     color: #A1A1A1;
-    max-height: 25px;
+    max-height: 24px;
     width: fit-content;
     padding: .2rem .2rem .2rem .2rem;
     overflow: hidden;
@@ -1281,6 +1294,7 @@ footer {
     overflow: hidden;
     line-height: 1.4;
     padding: .2rem .2rem .2rem .2rem;
+    transition: .5s ease;
 }
 
 .form-label {
@@ -1416,11 +1430,17 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    margin-left: 10px;
 }
 
 .follow ul li a i {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
+    transition: .5s ease;
+}
+
+.follow ul li a:hover i {
+    color: #f1706b;
 }
 
 .follow {
@@ -1443,7 +1463,7 @@ footer {
 
 .copy-right-text {
     text-transform: capitalize;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
     color: white;
 }
@@ -1504,4 +1524,19 @@ footer {
 
 .populer-courses:hover .course-list a {
     color: black;
+}
+
+.copyright .copy-right-text {
+    font-weight: bold;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+.copy-right-text a {
+    color: #ff7468;
+    transition: .5s ease;
+}
+
+.copy-right-text a:hover {
+    color: #000836;
 }
