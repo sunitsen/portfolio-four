@@ -186,16 +186,30 @@ $(document).mousemove(function(e) {
 
 
 
-//navbar scroll
-window.onscroll = function() { myFunction() };
+// //navbar scroll
+// window.onscroll = function() { myFunction() };
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
 
-function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
+// function myFunction() {
+//     if (window.pageYOffset >= sticky) {
+//         navbar.classList.add("sticky")
+//     } else {
+//         navbar.classList.remove("sticky");
+//     }
+// }
+
+//Change pos/background/padding/add shadow on nav when scroll event happens 
+$(function() {
+    var navbar = $('.main-navbar');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() <= 40) {
+            navbar.removeClass('navbar-scroll');
+        } else {
+            navbar.addClass('navbar-scroll-down');
+        }
+
+    });
+});

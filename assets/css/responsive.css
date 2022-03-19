@@ -1,86 +1,94 @@
-@media only screen and (max-width: 1400px) {
-    /*-------main navbar------*/
-    .main-navbar .nav-item {
-        margin-left: 3rem !important;
-    }
-}
-
-@media only screen and (max-width: 1399px) {
-    .populer-courses .info-box .course-list {
-        margin-top: 10px;
-    }
-    .populer-courses .img-box {
-        width: 100%;
-    }
-    .populer-courses .course-list {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .populer-courses .img-box {
-        justify-content: space-between !important;
-    }
-}
-
-@media only screen and (max-width: 991px) {
-    .main-navbar {
-        background: rgb(69, 61, 128);
-    }
-    .main-navbar .nav-item {
-        margin-left: 0 !important;
-        text-align: center;
-    }
-    .main-navbar .navbar a:hover:before,
-    .navbar li:hover>a:before,
-    .navbar .active:before {
-        visibility: visible;
-        width: 10%;
-    }
-    #signUp {
-        width: 200px;
-        margin: auto;
-    }
-    .footer-box {
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .hero-elements {
+        /*--==========responsive screen size--====(1400px)===========*/
+        
+        @media only screen and (max-width: 1400px) {
+            /*-------main navbar------*/
+            .main-navbar .nav-item {
+                margin-left: 3rem !important;
+            }
+        }
+        /*--==========responsive screen size--====(1399px)===========*/
+        
+        @media only screen and (max-width: 1399px) {
+            .populer-courses .info-box .course-list {
+                margin-top: 10px;
+            }
+            .populer-courses .img-box {
+                width: 100%;
+            }
+            .populer-courses .course-list {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .populer-courses .img-box {
+                justify-content: space-between !important;
+            }
+        }
+        /*--==========responsive screen size--====(991px)===========*/
+        
+        @media only screen and (max-width: 991px) {
+            .main-navbar {
+                background: rgb(69, 61, 128);
+            }
+            .main-navbar .nav-item {
+                margin-left: 0 !important;
+                text-align: center;
+            }
+            .main-navbar .navbar a:hover:before,
+            .navbar li:hover>a:before,
+            .navbar .active:before {
+                visibility: visible;
+                width: 10%;
+            }
+            #signUp {
+                width: 200px;
+                margin: auto;
+            }
+            .footer-box {
+                text-align: center;
+            }
+        }
+        /*--==========responsive screen size--====(1400)===========*/
+        
+        @media only screen and (max-width: 992px) {
+            /* .hero-elements {
         display: block !important;
-    }
-    .hero-content {
-        margin: auto;
-        width: 100% !important;
-    }
-    .hero-content .sub-title {
-        text-align: center;
-        width: 100% !important;
-    }
-    .hero-content .title {
-        width: 100% !important;
-        text-align: center;
-        font-size: 2.5rem !important;
-    }
-    .hero-btn {
-        margin: auto;
-        padding-block: 3rem;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .template-card {
-        margin: auto;
-        width: 300px !important;
-    }
-    .hero-list-row {
-        padding-bottom: 0 !important;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .learning-program {
+    } */
+            .hero-content {
+                margin: auto;
+                width: 100% !important;
+            }
+            .hero-content .sub-title {
+                text-align: center;
+                width: 100% !important;
+            }
+            .hero-content .title {
+                width: 100% !important;
+                text-align: center;
+                font-size: 2.5rem !important;
+            }
+            .hero-btn {
+                margin: auto;
+                padding-block: 3rem;
+                display: none;
+            }
+        }
+        /*--==========responsive screen size--====(992)===========*/
+        
+        @media only screen and (max-width: 992px) {
+            .template-card {
+                margin: auto;
+                width: 300px !important;
+            }
+            .hero-list-row {
+                padding-bottom: 0 !important;
+            }
+        }
+        /*--==========responsive screen size--====(767)===========*/
+        
+        @media only screen and (max-width: 767px) {
+            /* .learning-program {
         display: block !important;
         justify-content: center !important;
     }
@@ -91,17 +99,141 @@
     }
     .learning-program .learning-program-list:nth-child(1) {
         margin-top: 0 !important;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    .hero-list-row .col-xl-4 {
-        justify-content: center;
-    }
-    .catagory-slider .owl-next {
-        right: -10px !important;
-    }
-    .catagory-slider .owl-prev {
-        left: -10px !important;
-    }
-}
+    } */
+            .hero-list-row .col-xl-4 {
+                justify-content: space-evenly !important;
+            }
+            .container {
+                max-width: 1000px !important;
+            }
+        }
+        /*--==========responsive screen size--====(575)===========*/
+        
+        @media only screen and (max-width: 575px) {
+            .hero-list-row .col-xl-4 {
+                justify-content: center;
+            }
+            .catagory-slider .owl-next {
+                right: -10px !important;
+            }
+            .catagory-slider .owl-prev {
+                left: -10px !important;
+            }
+        }
+        /*--==========responsive screen size--====(1993)===========*/
+        
+        @media only screen and (max-width: 993px) {
+            .hero-btn {
+                display: none;
+            }
+            .template-card {
+                width: 40rem !important;
+            }
+            .hero-content {
+                width: 100% !important;
+                margin-right: 10px;
+            }
+        }
+        /*--==========responsive screen size--====(570)===========*/
+        
+        @media only screen and (max-width: 570px) {
+            .hero-elements {
+                display: block !important;
+            }
+            .template-card {
+                width: 20rem !important;
+                margin-top: 30px;
+            }
+        }
+        /*--==========responsive screen size--====(570)===========*/
+        
+        @media only screen and (max-width: 575px) {
+            .learning-program .learning-program-list .single-list {
+                display: block !important;
+                width: 100%;
+                height: 100%;
+            }
+            .learning-program .learning-program-list .single-list .icon-box {
+                margin: 10px auto;
+            }
+            .learning-program .learning-program-list .single-list .text-box {
+                margin: auto;
+                margin: 20px auto !important;
+            }
+            .learning-program .learning-program-list .single-list .text-box .title {
+                margin: auto;
+            }
+            .learning-program .learning-program-list .single-list .text-box .sub-title {
+                margin: auto;
+                text-align: center;
+            }
+        }
+        /*--==========responsive screen size--====(4330)===========*/
+        
+        @media only screen and (max-width: 433px) {
+            .learning-program {
+                display: block !important;
+            }
+            .learning-program .learning-program-list {
+                width: 100%;
+                margin: 20px auto !important;
+            }
+            .learning-program .learning-program-list:nth-child(1) {
+                margin: 0px auto !important;
+            }
+        }
+        /*--==========responsive screen size--====(1199)===========*/
+        
+        @media only screen and (max-width: 1199px) {
+            .catagory-slider .item {
+                padding: 0 !important;
+            }
+            .catagory-slider .item:nth-child(1) {
+                border-right: 1px solid
+            }
+            .catagory-slider .owl-stage-outer {
+                border: 2px solid #453d80;
+                padding: 0 !important;
+            }
+        }
+        
+        @media only screen and (max-width: 756px) {
+            .catagory-slider .item-inner {
+                width: 100%;
+            }
+            .catagory-slider .item:nth-child(1) {
+                border-right: 1px solid
+            }
+        }
+        /*--==========responsive screen size--====(991)===========*/
+        
+        @media only screen and (max-width: 991px) {
+            .teacher-data {
+                display: block !important;
+            }
+            .teacher-data .profile-image {
+                width: 100%;
+            }
+            .teacher-data .teacher-detail {
+                width: 100%;
+                margin: 10px 0px 0px 0px !important;
+                margin: 10px !important;
+                text-align: center;
+            }
+        }
+        /*--==========responsive screen size--====(767)===========*/
+        
+        @media only screen and (max-width: 767px) {
+            .content-of-contact .title {
+                text-align: center !important;
+            }
+            .content-of-contact {
+                padding-block: 2rem;
+            }
+            .contact-form .form-title {
+                text-align: center;
+            }
+            .contact-form {
+                width: 100% !important;
+            }
+        }
