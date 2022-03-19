@@ -64,7 +64,7 @@ header {
     left: 0;
     z-index: -1;
     clip-path: polygon(0 0, 100% 0, 100% 31%, 0 44%);
-    background-image: linear-gradient(to left bottom, #f1706b, #ad959c75, #89456e54, #fff0, #524a90);
+    /* background-image: linear-gradient(to left bottom, #f1706b, #ad959c75, #89456e54, #fff0, #524a90); */
 }
 
 
@@ -316,6 +316,7 @@ header {
 .hero-elements .template-card {
     width: 23.5rem;
     transition: .5s ease;
+    z-index: 1;
 }
 
 .section-one .card {
