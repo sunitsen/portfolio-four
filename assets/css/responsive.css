@@ -98,4 +98,10 @@
     .hero-list-row .col-xl-4 {
         justify-content: center;
     }
+    .catagory-slider .owl-next {
+        right: -10px !important;
+    }
+    .catagory-slider .owl-prev {
+        left: -10px !important;
+    }
 }
