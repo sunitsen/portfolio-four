@@ -42,6 +42,10 @@ a {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.bg-div-one {
+    background: #000836;
+}
+
 
 /*==============reset css end here==========*/
 
@@ -64,7 +68,7 @@ header {
     left: 0;
     z-index: -1;
     clip-path: polygon(0 0, 100% 0, 100% 31%, 0 44%);
-    /* background-image: linear-gradient(to left bottom, #f1706b, #ad959c75, #89456e54, #fff0, #524a90); */
+    background-image: linear-gradient(to left bottom, #f1706b, #ad959c75, #89456e54, #fff0, #001e5d);
 }
 
 
@@ -76,7 +80,7 @@ header {
 }
 
 .navbar-scroll-down {
-    background: #453d80;
+    background: #000836;
     position: fixed;
     width: 100%;
     top: 0;
@@ -626,6 +630,18 @@ header {
     background: #EDF8F4;
 }
 
+.learning-program-list:hover {
+    background: #000836;
+}
+
+.learning-program-list:hover .title {
+    color: white !important;
+}
+
+.learning-program-list:hover .sub-title {
+    color: white !important;
+}
+
 
 /*------div content-------*/
 
@@ -809,6 +825,7 @@ header {
     color: white;
     font-size: 1.2rem;
     text-transform: capitalize;
+    transition: .5s ease;
 }
 
 
@@ -870,6 +887,7 @@ header {
     background: rgb(255, 255, 255);
     padding: .5rem;
     border-radius: .2rem;
+    transition: .5s ease;
 }
 
 .populer-courses .ratio img {
@@ -885,6 +903,7 @@ header {
     width: fit-content;
     padding: .2rem .2rem .2rem .2rem;
     overflow: hidden;
+    transition: .5s ease;
 }
 
 .populer-courses .content-box .title {
@@ -897,6 +916,7 @@ header {
     line-height: 1.1;
     padding: .1rem .2rem .2rem .2rem;
     text-transform: capitalize;
+    transition: .5s ease;
 }
 
 .populer-courses .course-list a {
@@ -906,6 +926,7 @@ header {
     border-radius: 20px;
     color: #A1A1A1;
     text-transform: capitalize;
+    transition: .5s ease;
 }
 
 .populer-courses .img-box img {
@@ -985,6 +1006,7 @@ header {
     color: white;
     text-transform: capitalize;
     border: none;
+    transition: .5s ease;
 }
 
 .teacher-data .profile-image {
@@ -1035,7 +1057,7 @@ header {
 /*===========section six styling start from here========*/
 
 .section-six {
-    background: #6159A2;
+    background: #000836;
 }
 
 
@@ -1180,11 +1202,12 @@ header {
     font-weight: bold;
     text-transform: capitalize;
     transition: .5s ease;
+    color: white;
 }
 
 .contact-form {
     width: 70% !important;
-    background: white;
+    background: #000836;
     padding: 1rem;
 }
 
@@ -1215,6 +1238,11 @@ header {
     color: white;
     text-transform: capitalize;
     font-weight: bold;
+    transition: .5s ease;
+}
+
+.get-it-now:hover {
+    background: #ff7468;
 }
 
 
@@ -1226,13 +1254,18 @@ header {
 
 /*-----footer section------*/
 
+footer {
+    background: #000836;
+}
+
 .footer-box {
     width: 80%;
     margin: auto;
+    color: white;
 }
 
 .footer-box .footer-logo a {
-    color: #3e3e3e;
+    color: white;
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
@@ -1311,7 +1344,7 @@ header {
 .footer-box .links li a {
     font-size: 1rem;
     text-transform: capitalizea;
-    color: #3e3e3e;
+    color: white;
     transition: .5s ease;
 }
 
@@ -1326,7 +1359,7 @@ header {
 .footer-box .links li a {
     font-size: 1rem;
     text-transform: capitalize;
-    color: #3e3e3e;
+    color: white;
     transition: .5s ease;
     font-weight: bold;
 }
@@ -1420,3 +1453,55 @@ header {
 
 
 /*===========css styling end here========*/
+
+.div-content button:hover {
+    background: #000836;
+}
+
+.section-title {
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 12rem;
+    margin: auto;
+    height: .2rem;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: -150px;
+    margin: auto;
+    border: 1px solid #000836;
+}
+
+.browse-all:hover {
+    background: #000836;
+}
+
+.view-profile:hover {
+    background: #000836;
+}
+
+.populer-courses:hover {
+    background: #000836;
+    color: white;
+}
+
+.populer-courses:hover .title {
+    color: white;
+}
+
+.populer-courses:hover h6 {
+    color: white;
+}
+
+.populer-courses:hover .rating-box span:nth-child(2) {
+    color: white;
+}
+
+.populer-courses:hover .course-list a {
+    color: black;
+}
