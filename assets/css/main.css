@@ -42,6 +42,10 @@ a {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.template-box-shadow-two {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
 .bg-div-one {
     background: #000836;
 }
@@ -99,6 +103,8 @@ header {
     left: 0;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     z-index: 111;
+    border-bottom: 1px solid #d91879;
+    transition: .5s ease;
 }
 
 .navbar-brand {
@@ -435,7 +441,7 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #3A3374;
+    background: #000836;
     z-index: -1;
     bottom: 0;
     left: 0;
@@ -999,14 +1005,51 @@ header {
 
 /*-----teacher detail--------*/
 
+.teacher-data:hover {
+    background: #000836;
+}
+
+.teacher-data:hover .title {
+    color: white !important;
+}
+
+.teacher-data:hover .sub-title {
+    color: white !important;
+}
+
+.teacher-data:hover .text {
+    color: white;
+}
+
+.teacher-data .ratio {
+    position: relative;
+    overflow: hidden;
+}
+
+.teacher-data .ratio:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 20%;
+    background: #000836;
+    position: absolute;
+    opacity: .5;
+    bottom: 0;
+    left: -100%;
+    transition: .5s ease;
+}
+
+.teacher-data .ratio:hover:after {
+    height: 100%;
+    left: 0 !important;
+}
+
 .teacher-data {
     background: white;
-    padding: 1rem;
     transition: .5s ease;
 }
 
 .teacher-data .ratio img {
-    border-radius: .2rem;
     transition: .5s ease;
 }
 
@@ -1024,6 +1067,7 @@ header {
 
 .teacher-data .profile-image {
     width: 50%;
+    transition: .5s ease;
 }
 
 .teacher-data .teacher-detail {
@@ -1043,7 +1087,7 @@ header {
     text-transform: capitalize;
 }
 
-.teacher-data .teacher-detail .suv-title {
+.teacher-data .teacher-detail .sub-title {
     width: 100%;
     font-size: 1rem;
     font-weight: 600;
@@ -1070,22 +1114,39 @@ header {
 /*===========section six styling start from here========*/
 
 .section-six {
-    background: #000836;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.section-six:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background: #000836; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right top, #f1706b, #ad959c75, #89456e54, #fff0, #001e5d);
 }
 
 
 /*---noot----*/
 
 .noot-box {
-    background: white;
-    border-radius: .2rem;
-    padding: 2rem 0rem 2rem 0rem;
+    width: 95%;
+    margin: auto;
+    height: 300px;
 }
 
-.noot-box svg {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #f5b70a;
+.studient-note .item {
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .noot-box {
@@ -1093,11 +1154,60 @@ header {
 }
 
 .noot-box .text {
-    font-size: .9rem;
+    font-size: 1.2rem;
     max-height: 60px;
     padding: .1rem .2rem .2rem .2rem;
     line-height: 1.4;
     overflow: hidden;
+    color: white;
+    transition: .5s ease;
+}
+
+.noot-box .text .quote-one {
+    color: white;
+    font-size: 1rem;
+    transition: .5s ease;
+}
+
+.noot-box .text .quote-two {
+    color: white;
+    font-size: 1rem;
+    transition: .5s ease;
+}
+
+.noot-box:hover .quote-one {
+    color: #ff7468;
+}
+
+.noot-box:hover .quote-two {
+    color: #ff7468;
+}
+
+.noot-box .title {
+    overflow: hidden;
+    font-size: 2rem;
+    color: #3e3e3e;
+    font-weight: bold;
+    line-height: 1;
+    max-height: 40px;
+    line-height: 1.1;
+    padding: .1rem .2rem .2rem .2rem;
+    transition: .5s ease;
+    color: white;
+    text-transform: capitalize;
+}
+
+.noot-box .sub-title {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .2rem .2rem .2rem .2rem;
+    max-height: 25px;
+    line-height: 1.2;
+    overflow: hidden;
+    transition: .5s ease;
+    color: white;
+    text-transform: capitalize;
 }
 
 .noot-box .ratio {
@@ -1110,28 +1220,6 @@ header {
 .noot-box .ratio img {
     width: 100%;
     border-radius: 50%;
-}
-
-.noot-box .title {
-    overflow: hidden;
-    font-size: 2rem;
-    color: #3e3e3e;
-    font-weight: bold;
-    line-height: 1;
-    max-height: 40px;
-    line-height: 1.1;
-    padding: .1rem .2rem .2rem .2rem;
-    text-transform: capitalize;
-}
-
-.noot-box .sub-title {
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: .2rem .2rem .2rem .2rem;
-    max-height: 25px;
-    line-height: 1.2;
-    overflow: hidden;
 }
 
 .studient-note {
@@ -1208,6 +1296,7 @@ header {
     text-align: left;
     color: white;
     transition: .5s ease;
+    text-transform: capitalize;
 }
 
 .contact-form h1 {
@@ -1539,4 +1628,58 @@ footer {
 
 .copy-right-text a:hover {
     color: #000836;
+}
+
+.teacher-data {
+    position: relative;
+}
+
+.teacher-data:hover .teacher-social-icon ul {
+    opacity: 100%;
+}
+
+.teacher-social-icon ul {
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    left: -325px;
+    padding: .5rem;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    border: 1px solid #453d80;
+    width: 200px;
+    height: 50px;
+    transition: .5s ease;
+}
+
+.teacher-social-icon ul li:nth-child(1) {
+    margin-left: 0;
+}
+
+.teacher-social-icon ul li {
+    margin-left: 20px;
+}
+
+.teacher-social-icon ul li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ff7468;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.teacher-social-icon ul li a i {
+    color: black;
+    color: white;
+    background: black;
+    padding: .5rem;
+    border-radius: 50px;
 }
