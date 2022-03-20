@@ -178,11 +178,7 @@
             }
         }
         
-        @media only screen and (max-width: 756px) {
-            .catagory-slider .item-inner {
-                width: 100%;
-            }
-        }
+        @media only screen and (max-width: 756px) {}
         /*--==========responsive screen size--====(991)===========*/
         
         @media only screen and (max-width: 991px) {

@@ -565,12 +565,16 @@ header {
 
 .learning-program-list {
     width: 50%;
-    height: 150px;
     background: white;
     border-radius: .2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s ease;
+}
+
+.learning-program-list .single-list {
+    height: 150px;
     transition: .5s ease;
 }
 
@@ -723,16 +727,8 @@ header {
 
 /*-----catagory slider-------*/
 
-.catagory-slider .item-inner:hover {
+.catagory-slider .course-box:hover {
     background: #453d80;
-}
-
-.catagory-slider .item-inner:hover h4 {
-    color: white;
-}
-
-.catagory-slider .item-inner:hover p {
-    color: white;
 }
 
 .catagory-slider .item {
@@ -741,27 +737,24 @@ header {
     transition: .5s ease;
 }
 
-.catagory-slider .item-inner {
-    width: 100%;
+.course-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
-    transition: .5s ease;
 }
 
-.catagory-slider .item-inner .icon {
+.catagory-slider .course-box .icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.catagory-slider .item-inner .icon i {
+.catagory-slider .course-box .icon i {
     font-size: 2.8rem;
 }
 
-.catagory-slider .item-inner h4 {
+.catagory-slider .course-box h4 {
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
@@ -769,16 +762,23 @@ header {
     overflow: hidden;
     color: #3e3e3e;
     line-height: 1.1;
-    width: 200px;
     text-transform: capitalize;
     transition: .5s ease;
 }
 
-.catagory-slider .item-inner p {
+.catagory-slider .course-box p {
     text-align: center;
     color: #3e3e3e;
     margin-top: .5rem;
     transition: .5s ease;
+}
+
+.catagory-slider .course-box:hover h4 {
+    color: white;
+}
+
+.catagory-slider .course-box:hover p {
+    color: white;
 }
 
 .catagory-slider {
